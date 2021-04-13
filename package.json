@@ -1,7 +1,7 @@
 {
   "name": "tre-modal-dialog",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple modal dialogs with multiple buttons",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,9 +12,17 @@
   },
   "keywords": [],
   "author": "Jan Bölsche <jan@lagomorph.de> (https://regular.codes/)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/regular/tre-modal-dialog/issues"
   },
-  "homepage": "https://github.com/regular/tre-modal-dialog#readme"
+  "homepage": "https://github.com/regular/tre-modal-dialog#readme",
+  "dependencies": {
+    "module-styles": "^1.0.0",
+    "mutant": "^3.29.0"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "budo": "^11.6.4"
+  }
 }
