@@ -4,6 +4,7 @@ const styles = require('module-styles')('tre-modal-dialog')
 module.exports = function(msg, opts, cb) {
   if (typeof opts == 'function') {cb = opts; opts = {}}
   const buttons = opts.buttons || {ok: 'Okay'}
+  const tweak = opts.tweak || (()=>{})
 
   const el = h('.tre-modal-dialog-dimmer', [
     h('section.box', [
@@ -18,7 +19,7 @@ module.exports = function(msg, opts, cb) {
       }))
     ])
   ])
-
+  tweak(el)
   document.body.appendChild(el)
 
   function quit(err, key) {
